@@ -1,3 +1,3 @@
 export default function Button() {
-  return <button className="btn">Enter</button>;
+  return <button className="btn">Start</button>;
 }

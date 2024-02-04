@@ -13,7 +13,7 @@
 }
 
 /* GENERAL STYLES */
-body {
+.hero {
   background-image: linear-gradient(45deg, #e66465, #f30769);
   background-color: var(--BG);
   font-family: Helvetica, Arial, sans-serif;
@@ -51,6 +51,7 @@ nav .menu:nth-child(1) {
 }
 
 .foot {
+  font-family: "Pexel";
   font-size: 1.2rem;
   padding: 3rem 4rem 3rem 4rem;
   justify-content: space-between;
@@ -61,32 +62,68 @@ nav .menu:nth-child(1) {
   background-color: black;
   color: white;
 }
+.foot .pop {
+  transition: 0.1s ease-in-out;
+}
+.foot .pop:hover {
+  transform: translatex(-10px);
+}
 .foot p a {
   color: white;
   text-decoration: none;
 }
 
 .frame {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+  z-index: 0;
+}
+.frame h1 {
+  z-index: 1;
 }
 
 .btn {
-  font-size: 1.4rem;
-  background-color: rgb(67, 0, 126);
   color: white;
-  width: 100px;
-  height: 60px;
+  font-size: 1.6rem;
+  z-index: 999;
   border: none;
-  border-radius: 10px;
+  height: 75px;
+  width: 110px;
+  border-radius: 12px;
+  background: black;
+  transition: 0.2s ease-in-out;
+  box-shadow: black 0px 5px 15px;
   cursor: pointer;
+}
+.btn:hover {
+  transform: translatey(-10px);
+  box-shadow: black 0px 15px 25px;
 }
 
 .right {
   margin-left: auto;
   text-align: right;
+}
+
+.canvas {
+  z-index: 10;
+  position: absolute;
+  top: 5rem;
+}
+
+@font-face {
+  font-family: Pexel;
+  src: url(./assets/fonts/PexelGrotesk/PexelGrotesk-Regular.otf);
+}
+@font-face {
+  font-family: Ring;
+  src: url(./assets/fonts/Ringift/Ringift.otf);
+}
+@font-face {
+  font-family: Roste;
+  src: url(./assets/fonts/rostemary/Rostemary.ttf);
 }/*# sourceMappingURL=App.css.map */
