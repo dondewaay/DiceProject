@@ -7,12 +7,9 @@ export default function Main() {
     <div className="canvas">
       <Button />
       <Canvas>
-        <directionalLight position={[0, 0, 5]} />
-        <mesh position={[1, 1, 1]}>
-          <boxGeometry args={[1, 1, 1]} />
-          <meshStandardMaterial color={"grey"} />
-        </mesh>
+        <directionalLight position={[0, 0, 15]} />
+        <Model />
       </Canvas>
-      </div>
+    </div>
   );
 }

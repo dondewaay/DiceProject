@@ -35,7 +35,7 @@ nav {
   z-index: 1;
   width: 100%;
   height: 25px;
-  padding: 3rem 4rem 3rem 4rem;
+  padding: 4rem 5rem 4rem 5rem;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
@@ -61,7 +61,7 @@ nav {
 .foot {
   font-family: "Pexel";
   font-size: 1.2rem;
-  padding: 3rem 4rem 3rem 4rem;
+  padding: 0rem 5rem 2rem 5rem;
   justify-content: space-between;
   align-items: flex-end;
   display: flex;
@@ -102,13 +102,13 @@ nav {
   border: none;
   height: 75px;
   width: 110px;
-  border-radius: 12px;
+  border-radius: 14px;
   background: black;
   transition: 0.2s ease-in-out;
   box-shadow: black 0px 5px 15px;
   cursor: pointer;
   &:hover {
-    transform: translatey(-10px);
+    transform: translatey(-5px);
     box-shadow: black 0px 15px 25px;
   }
 }
