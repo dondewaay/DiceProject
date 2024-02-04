@@ -17,7 +17,6 @@ body {
 }
 
 .hero {
-  width: 100vw;
   height: 100vh;
   background-image: linear-gradient(45deg, #e66465, #f30769);
   background-color: var(--BG);
@@ -91,6 +90,7 @@ nav .menu:nth-child(1) {
 .btn {
   position: absolute;
   top: 40vh;
+  left: 25%;
   z-index: 10;
   color: white;
   font-size: 1.6rem;
@@ -115,7 +115,6 @@ nav .menu:nth-child(1) {
 }
 
 .canvas {
-  width: 100vw;
   height: 100vh;
   display: flex;
   text-align: center;
