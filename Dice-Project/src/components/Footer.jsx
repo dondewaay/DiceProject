@@ -13,6 +13,9 @@ export default function Footer() {
         <p className="pop">
           <a href="https://github.com/dondewaay/">Github</a>
         </p>
+        <p className="pop">
+          <a href="https://www.linkedin.com/in/dondewaay~/">LinkedIn</a>
+        </p>
       </div>
     </footer>
   );
