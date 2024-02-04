@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 /* HTML RESET */
+
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +15,7 @@
 }
 
 /* GENERAL STYLES */
+
 body {
   background-image: linear-gradient(45deg, #e66465, #f30769);
   background-color: var(--BG);
@@ -35,19 +38,19 @@ nav {
   top: 0;
   left: 0;
   transition: all 0.2 ease-in-out;
-}
-nav h1 {
-  color: var(--UNSELCOLOR);
-  transition: 0.2s ease-in-out;
-}
-nav h1:hover {
-  transform: scale(1.05);
-  color: white;
-  cursor: pointer;
-}
-nav .menu:nth-child(1) {
-  margin-right: auto;
-  white-space: nowrap;
+  h1 {
+    color: var(--UNSELCOLOR);
+    transition: 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+      color: white;
+      cursor: pointer;
+    }
+  }
+  .menu:nth-child(1) {
+    margin-right: auto;
+    white-space: nowrap;
+  }
 }
 
 .foot {
@@ -60,10 +63,10 @@ nav .menu:nth-child(1) {
   width: 100%;
   background-color: black;
   color: white;
-}
-.foot p a {
-  color: white;
-  text-decoration: none;
+  p a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .frame {
@@ -89,4 +92,4 @@ nav .menu:nth-child(1) {
 .right {
   margin-left: auto;
   text-align: right;
-}/*# sourceMappingURL=App.css.map */
+}

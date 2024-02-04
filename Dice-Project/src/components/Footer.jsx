@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer>
+    <footer className="foot">
       <p>Don DeWaay III</p>
-      <div class="right">
+      <div>
         <p>Socials:</p>
         <p>
           <a href="https://twitter.com/DonaldDeWaay">Twitter</a>
