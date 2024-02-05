@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Roll from "./pages/Roll";
 import Header from "./components/Header";
-import "./styles/App.css"
+import "./styles/App.css";
 
 function App() {
   return (

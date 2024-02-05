@@ -44,6 +44,11 @@ nav {
   }
 }
 
+.link {
+  color: $UNSELCOLOR;
+  text-decoration: none;
+}
+
 .foot {
   font-family: "Pexel";
   font-size: 1.2rem;
@@ -67,11 +72,6 @@ nav {
   }
 }
 
-.link {
-  color: $UNSELCOLOR;
-  text-decoration: none;
-}
-
 @media (max-width: 600px) {
   nav {
     display: block;
@@ -85,15 +85,5 @@ nav {
 
 @font-face {
   font-family: Pexel;
-  src: url(./assets/fonts/PexelGrotesk/PexelGrotesk-Regular.otf);
-}
-
-@font-face {
-  font-family: Ring;
-  src: url(./assets/fonts/Ringift/Ringift.otf);
-}
-
-@font-face {
-  font-family: Roste;
-  src: url(./assets/fonts/rostemary/Rostemary.ttf);
+  src: url(../assets/fonts/PexelGrotesk/PexelGrotesk-Regular.otf);
 }
