@@ -1,10 +1,14 @@
-import RollMain from "../components/RollMain";
+import RollHero from "../components/RollHero";
+import Grid from "../components/Grid";
 import "../styles/Roll.css";
 
 export default function Roll() {
   return (
     <>
-      <RollMain className="hero" />
+      <div className="maindiv">
+        <RollHero />
+        <Grid />
+      </div>
     </>
   );
 }

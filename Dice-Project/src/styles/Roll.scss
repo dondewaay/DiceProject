@@ -9,6 +9,18 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
   box-sizing: border-box;
 }
 
-.btn {
-    
+.maindiv {
+  background-color: $BG;
+  width: 100vw;
+  min-height: 200vh;
+}
+
+.card {
+  width: 200px;
+  height: 150px;
+  margin: 1rem;
+}
+
+.hero {
+    height: 80vh;
 }
