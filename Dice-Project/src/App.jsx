@@ -1,6 +1,7 @@
 import { Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Roll from "./pages/Roll"
+import Footer from "./components/Footer";
+import Roll from "./pages/Roll";
 import Header from "./components/Header";
 import "./App.css";
 
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/roll" element={<Roll />} />
       </Routes>
+      <Footer />
     </>
   );
 }

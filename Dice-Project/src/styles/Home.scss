@@ -1,0 +1,54 @@
+// Variables:
+$BG: #191919;
+$UNSELCOLOR: hsla(0, 0%, 100%, 0.5);
+$BGI: linear-gradient(45deg, #e66465, #f30769);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  border: white 1px;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  color: white;
+  height: 75px;
+  width: 110px;
+  border-radius: 10px;
+  background: black;
+  transition: 0.2s ease-in-out;
+  box-shadow: black 0px 5px 15px;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: translatey(-5px);
+  box-shadow: black 0px 15px 25px;
+}
+
+.billboard {
+  font-size: 2rem;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+.billboard h1 {
+  font-size: 8rem;
+}
+
+.canvas {
+  font-family: Helvetica;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  background-color: $BG;
+  color: white;
+}
+
+.link {
+  color: var(--UNSELCOLOR) !important;
+  text-decoration: none;
+}

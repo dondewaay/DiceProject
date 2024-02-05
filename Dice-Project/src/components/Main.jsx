@@ -1,6 +1,7 @@
 import Button from "./Button";
 import Model from "./Model";
 import { Canvas } from "@react-three/fiber";
+import "../styles/Home.css";
 
 export default function Main() {
   return (
@@ -13,7 +14,7 @@ export default function Main() {
         <h1>
           Polymer? <br />I hardl-
         </h1>
-        <Button />
+        <Button message={"Roll"} />
       </div>
     </div>
   );

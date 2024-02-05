@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-
+/* VARIABLES */
 /* HTML RESET */
 * {
   padding: 0;
@@ -8,25 +8,11 @@
 }
 
 :root {
-  --UNSELCOLOR: hsla(0, 0%, 100%, 0.5);
-  --BG: #191919;
+  background-color: black;
 }
 
 /* GENERAL STYLES */
-body {
-  background-color: black;
-}
-
-.hero {
-  height: 100vh;
-  background-color: black;
-  /* background-image: linear-gradient(45deg, #e66465, #f30769); */
-  background-color: var(--BG);
-  font-family: Helvetica;
-}
-
 nav {
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   display: flex;
   flex-direction: row;
@@ -37,14 +23,14 @@ nav {
   align-items: center;
   position: fixed;
   transition: all 0.2 ease-in-out;
+  text-decoration: none;
 }
-
 nav h1 {
+  font-family: Helvetica;
   white-space: nowrap;
-  color: var(--UNSELCOLOR);
+  color: hsla(0, 0%, 100%, 0.5);
   transition: 0.2s ease-in-out;
 }
-
 nav h1:hover {
   transform: scale(1.05);
   color: white;
@@ -63,75 +49,20 @@ nav h1:hover {
   background-color: black;
   color: white;
 }
-
 .foot .pop {
   transition: 0.1s ease-in-out;
 }
-
 .foot .pop:hover {
   transform: translatex(-10px);
 }
-
 .foot p a {
   color: white;
   text-decoration: none;
 }
 
-.frame {
-  min-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
-}
-
-.btn {
-  font-size: 1.8rem;
-  margin-top: 1.5rem;
-  color: white;
-  border: none;
-  height: 75px;
-  width: 110px;
-  border-radius: 10px;
-  background: black;
-  transition: 0.2s ease-in-out;
-  box-shadow: black 0px 5px 15px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  transform: translatey(-5px);
-  box-shadow: black 0px 15px 25px;
-}
-
-.billboard {
-  font-size: 2rem;
-  position: absolute;
-  top: 35%;
-  left: 15%;
-}
-
-.billboard h1 {
-  font-size: 8rem;
-}
-
-.right {
-  margin-left: auto;
-  text-align: right;
-}
-
-.canvas {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
-}
-
-.canvas h1 {
-  color: white;
+.link {
+  color: hsla(0, 0%, 100%, 0.5);
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
@@ -140,25 +71,19 @@ nav h1:hover {
     text-align: center;
     padding-top: 3rem;
   }
-
   nav h1 {
     color: white;
   }
 }
-
 @font-face {
   font-family: Pexel;
   src: url(./assets/fonts/PexelGrotesk/PexelGrotesk-Regular.otf);
 }
-
 @font-face {
   font-family: Ring;
   src: url(./assets/fonts/Ringift/Ringift.otf);
 }
-
 @font-face {
   font-family: Roste;
   src: url(./assets/fonts/rostemary/Rostemary.ttf);
-}
-
-/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */

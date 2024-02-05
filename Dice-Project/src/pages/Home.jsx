@@ -1,13 +1,10 @@
 import Main from "../components/Main";
-import Footer from "../components/Footer";
+import "../styles/Home.css";
 
 export default function Home() {
   return (
     <>
-      <div className="hero">
-        <Main />
-      </div>
-      <Footer />
+      <Main />
     </>
   );
 }

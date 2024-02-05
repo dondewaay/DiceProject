@@ -1,11 +1,10 @@
-import Main from "../components/Main";
-import Footer from "../components/Footer";
+import RollMain from "../components/RollMain";
+import "../styles/Roll.css";
 
 export default function Roll() {
   return (
     <>
-      <Main />
-      <Footer />;
+      <RollMain className="hero" />
     </>
   );
 }
