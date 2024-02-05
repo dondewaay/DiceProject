@@ -5,11 +5,17 @@ import { Canvas } from "@react-three/fiber";
 export default function Main() {
   return (
     <div className="canvas">
-      <Button />
       <Canvas>
-        <directionalLight position={[0, 0, 15]} />
+        <directionalLight position={[0, 0, 1]} />
         <Model />
       </Canvas>
+      <div className="billboard">
+        <h1>
+          Dice rolling, <br />
+          made easy
+        </h1>
+        <Button />
+      </div>
     </div>
   );
 }

@@ -20,27 +20,23 @@ body {
   height: 100vh;
   background-image: linear-gradient(45deg, #e66465, #f30769);
   background-color: var(--BG);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica;
 }
 
 nav {
   font-size: 1.2rem;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
   z-index: 1;
   width: 100%;
   height: 25px;
   padding: 4rem 5rem 4rem 5rem;
   align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
   position: fixed;
-  top: 0;
-  left: 0;
   transition: all 0.2 ease-in-out;
 }
 nav h1 {
+  white-space: nowrap;
   color: var(--UNSELCOLOR);
   transition: 0.2s ease-in-out;
 }
@@ -48,10 +44,6 @@ nav h1:hover {
   transform: scale(1.05);
   color: white;
   cursor: pointer;
-}
-nav .menu:nth-child(1) {
-  margin-right: auto;
-  white-space: nowrap;
 }
 
 .foot {
@@ -88,17 +80,13 @@ nav .menu:nth-child(1) {
 }
 
 .btn {
-  position: absolute;
-  top: 40vh;
-  left: 25%;
-  z-index: 10;
+  margin-top: 1rem;
   color: white;
-  font-size: 1.6rem;
-  z-index: 999;
+  font-size: 1.8rem;
   border: none;
   height: 75px;
   width: 110px;
-  border-radius: 14px;
+  border-radius: 12px;
   background: black;
   transition: 0.2s ease-in-out;
   box-shadow: black 0px 5px 15px;
@@ -109,6 +97,13 @@ nav .menu:nth-child(1) {
   box-shadow: black 0px 15px 25px;
 }
 
+.billboard {
+  font-size: 2rem;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+
 .right {
   margin-left: auto;
   text-align: right;
@@ -117,12 +112,24 @@ nav .menu:nth-child(1) {
 .canvas {
   height: 100vh;
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
   z-index: 0;
 }
+.canvas h1 {
+  color: white;
+}
 
+@media (max-width: 600px) {
+  nav {
+    display: block;
+    text-align: center;
+    padding-top: 3rem;
+  }
+  nav h1 {
+    color: white;
+  }
+}
 @font-face {
   font-family: Pexel;
   src: url(./assets/fonts/PexelGrotesk/PexelGrotesk-Regular.otf);
