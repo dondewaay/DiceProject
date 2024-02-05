@@ -1,12 +1,16 @@
-import { Home } from "./pages/Home"
-import { Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
 import "./App.css";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />}/>
-    </Routes>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/roll" element={<Roll />} />
+      </Routes>
+    </>
   );
 }
 
