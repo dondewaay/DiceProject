@@ -5,7 +5,7 @@ import "../styles/Roll.css";
 export default function Roll() {
   return (
     <>
-      <div className="maindiv">
+      <div className="mainDiv">
         <RollHero />
         <Grid />
       </div>

@@ -9,10 +9,10 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
   box-sizing: border-box;
 }
 
-.maindiv {
+.mainDiv {
   background-color: $BG;
   width: 100vw;
-  min-height: 200vh;
+  min-height: 250vh;
 }
 
 .card {
@@ -22,5 +22,10 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
 }
 
 .hero {
-    height: 80vh;
+  height: 80vh;
+  display: grid;
+}
+
+.grid {
+    display: grid;
 }

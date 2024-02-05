@@ -1,3 +1,3 @@
 export default function Grid() {
-  return;
+  return <div className="grid"></div>;
 }
