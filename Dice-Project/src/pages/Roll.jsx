@@ -1,1 +1,5 @@
-export default function Roll() {}
+import Main from "../components/Main";
+
+export default function Roll() {
+  return <Main />;
+}

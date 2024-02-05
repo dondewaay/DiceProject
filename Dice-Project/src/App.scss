@@ -17,6 +17,7 @@
 
 body {
   background-color: black;
+  text-decoration: none;
 }
 
 .hero {
@@ -37,6 +38,7 @@ nav {
   align-items: center;
   position: fixed;
   transition: all 0.2 ease-in-out;
+  text-decoration: none;
   h1 {
     white-space: nowrap;
     color: var(--UNSELCOLOR);
@@ -124,6 +126,11 @@ nav {
   h1 {
     color: white;
   }
+}
+
+.link {
+  color: var(--UNSELCOLOR) !important;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 /* HTML RESET */
 * {
   padding: 0;
@@ -18,12 +19,14 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: linear-gradient(45deg, #e66465, #f30769);
+  background-color: black;
+  /* background-image: linear-gradient(45deg, #e66465, #f30769); */
   background-color: var(--BG);
   font-family: Helvetica;
 }
 
 nav {
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   display: flex;
   flex-direction: row;
@@ -35,11 +38,13 @@ nav {
   position: fixed;
   transition: all 0.2 ease-in-out;
 }
+
 nav h1 {
   white-space: nowrap;
   color: var(--UNSELCOLOR);
   transition: 0.2s ease-in-out;
 }
+
 nav h1:hover {
   transform: scale(1.05);
   color: white;
@@ -58,12 +63,15 @@ nav h1:hover {
   background-color: black;
   color: white;
 }
+
 .foot .pop {
   transition: 0.1s ease-in-out;
 }
+
 .foot .pop:hover {
   transform: translatex(-10px);
 }
+
 .foot p a {
   color: white;
   text-decoration: none;
@@ -92,6 +100,7 @@ nav h1:hover {
   box-shadow: black 0px 5px 15px;
   cursor: pointer;
 }
+
 .btn:hover {
   transform: translatey(-5px);
   box-shadow: black 0px 15px 25px;
@@ -103,6 +112,7 @@ nav h1:hover {
   top: 35%;
   left: 15%;
 }
+
 .billboard h1 {
   font-size: 8rem;
 }
@@ -119,6 +129,7 @@ nav h1:hover {
   align-items: center;
   z-index: 0;
 }
+
 .canvas h1 {
   color: white;
 }
@@ -129,19 +140,25 @@ nav h1:hover {
     text-align: center;
     padding-top: 3rem;
   }
+
   nav h1 {
     color: white;
   }
 }
+
 @font-face {
   font-family: Pexel;
   src: url(./assets/fonts/PexelGrotesk/PexelGrotesk-Regular.otf);
 }
+
 @font-face {
   font-family: Ring;
   src: url(./assets/fonts/Ringift/Ringift.otf);
 }
+
 @font-face {
   font-family: Roste;
   src: url(./assets/fonts/rostemary/Rostemary.ttf);
-}/*# sourceMappingURL=App.css.map */
+}
+
+/*# sourceMappingURL=App.css.map */
