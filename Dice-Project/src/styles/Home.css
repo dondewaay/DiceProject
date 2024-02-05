@@ -44,6 +44,11 @@
   background-color: #191919;
   color: white;
 }
+.canvas .threed {
+  height: 100%;
+  width: 75vw;
+  margin-left: auto;
+}
 
 .link {
   color: var(--UNSELCOLOR) !important;

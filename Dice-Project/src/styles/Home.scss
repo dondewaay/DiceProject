@@ -46,6 +46,11 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
   z-index: 0;
   background-color: $BG;
   color: white;
+  .threed {
+    height: 100%;
+    width: 75vw;
+    margin-left: auto;
+  }
 }
 
 .link {
