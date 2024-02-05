@@ -66,7 +66,6 @@ nav {
       transform: translatex(-10px);
     }
   }
-
   p a {
     color: white;
     text-decoration: none;
@@ -84,13 +83,13 @@ nav {
 }
 
 .btn {
-  margin-top: 1rem;
-  color: white;
   font-size: 1.8rem;
+  margin-top: 1.5rem;
+  color: white;
   border: none;
   height: 75px;
   width: 110px;
-  border-radius: 12px;
+  border-radius: 10px;
   background: black;
   transition: 0.2s ease-in-out;
   box-shadow: black 0px 5px 15px;
@@ -104,8 +103,11 @@ nav {
 .billboard {
   font-size: 2rem;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 15%;
+  h1 {
+    font-size: 8rem;
+  }
 }
 
 .right {

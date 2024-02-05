@@ -6,13 +6,12 @@ export default function Main() {
   return (
     <div className="canvas">
       <Canvas>
-        <directionalLight position={[0, 0, 1]} />
-        <Model />
+        <directionalLight position={[2, 2, 2]} />
+        <Model position={[1.2, 0, 1]} size={2} detail={0} color={"grey"} />
       </Canvas>
       <div className="billboard">
         <h1>
-          Dice rolling, <br />
-          made easy
+          Polymer? <br />I hardl-
         </h1>
         <Button />
       </div>
