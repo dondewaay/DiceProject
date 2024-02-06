@@ -28,6 +28,10 @@
   position: absolute;
   top: 35%;
   left: 15%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  cursor: default;
 }
 
 .billboard h1 {

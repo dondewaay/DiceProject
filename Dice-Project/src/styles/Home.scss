@@ -22,6 +22,7 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
   box-shadow: black 0px 5px 15px;
   cursor: pointer;
 }
+
 .btn:hover {
   transform: translatey(-5px);
   box-shadow: black 0px 15px 25px;
@@ -32,7 +33,12 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
   position: absolute;
   top: 35%;
   left: 15%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
+
 .billboard h1 {
   font-size: 8rem;
 }

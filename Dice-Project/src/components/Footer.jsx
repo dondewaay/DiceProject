@@ -1,7 +1,9 @@
 export default function Footer() {
   return (
     <footer className="foot">
-      <p>🦋 Don DeWaay III</p>
+      <p>
+        <a href="">🦋 Don DeWaay III</a>
+      </p>
       <div>
         <p>Socials:</p>
         <p className="pop">
