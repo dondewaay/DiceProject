@@ -23,9 +23,56 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
 
 .hero {
   height: 80vh;
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-family: Helvetica;
+  background-image: $BGI;
 }
 
-.grid {
-    display: grid;
+.middletext {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  width: 50vw;
+  height: 100%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-top: 6rem;
+  padding-left: 8rem;
+  text-shadow: black 0px 0px 10px 15px;
+}
+
+.createNewCard {
+  text-align: right;
+  color: white;
+  font-family: Helvetica;
+  font-size: 2rem;
+  line-height: 1.5;
+  height: 100%;
+  margin: 3rem;
+  margin-top: 6rem;
+  box-shadow: black 0px 15px 30px;
+  border-radius: 30px;
+  width: 40vw;
+  background-color: $BG;
+  padding: 3rem;
+  display: flex;
+  input {
+    margin-left: 1rem;
+    font-size: 2rem;
+    border: white 2px;
+    color: white;
+    height: 2.2rem;
+    width: 3rem;
+    border-radius: 5px;
+    background-color: $BG;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 }
