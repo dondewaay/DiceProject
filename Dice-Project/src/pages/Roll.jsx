@@ -4,11 +4,12 @@ import "../styles/Roll.css";
 
 export default function Roll() {
   return (
-    <>
-      <div className="mainDiv">
-        <RollHero />
-        <Grid />
-      </div>
-    </>
+    <div className="mainDiv">
+      <RollHero>
+        <div className="restDiv" />
+      </RollHero>
+
+      <Grid />
+    </div>
   );
 }

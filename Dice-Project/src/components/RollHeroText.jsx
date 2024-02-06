@@ -2,11 +2,11 @@ export default function RollHeroText() {
   return (
     <div className="middletext">
       <h1>
-        Select a Preset
+        Create a Set
         <br />
         or
         <br />
-        Start From Scratch:
+        Select a Preset:
       </h1>
     </div>
   );

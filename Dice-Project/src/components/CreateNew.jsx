@@ -1,19 +1,45 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Button from "./Button";
 
 export default function CreateNew() {
   return (
     <div className="createNewCard">
-      <ul>
-        <li>d2<input type="text" /></li>
-        <li>d4<input type="text" /></li>
-        <li>d6<input type="text" /></li>
-        <li>d8<input type="text" /></li>
-        <li>d10<input type="text" /></li>
-        <li>d12<input type="text" /></li>
-        <li>d20<input type="text" /></li>
-        <li>d100<input type="text" /></li>
-      </ul>
+      <div>
+        <ul>
+          <li>
+            <input type="number" /> d2
+          </li>
+          <li>
+            <input type="number" /> d4
+          </li>
+          <li>
+            <input type="number" /> d6
+          </li>
+          <li>
+            <input type="number" /> d8
+          </li>
+          <li>
+            <input type="number" /> d10
+          </li>
+          <li>
+            <input type="number" /> d12
+          </li>
+          <li>
+            <input type="number" /> d20
+          </li>
+          <li>
+            <input type="number" /> d100
+          </li>
+          <li>
+            <input type="number" /> Modifier
+          </li>
+        </ul>
+        <div className="buttons">
+          <Button className="btn" message="Submit" />
+          <Button className="btn" message="Save" />
+          <Button className="btn" message="Quick Roll" />
+        </div>
+      </div>
     </div>
   );
 }

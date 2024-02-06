@@ -1,3 +1,7 @@
-export default function Card() {
-  return <div className="card"></div>;
+export default function Card({ name }) {
+  return (
+    <div className="card">
+      <p>{name}</p>
+    </div>
+  );
 }
