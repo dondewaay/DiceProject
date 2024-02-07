@@ -21,10 +21,11 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
   transition: 0.2s ease-in-out;
   box-shadow: black 0px 5px 15px;
   cursor: pointer;
+  border: 3px solid black;
   &:hover {
     transform: translatey(-5px);
     box-shadow: black 0px 15px 25px;
-    border: 4px solid white;
+    border: 3px solid white;
   }
 }
 

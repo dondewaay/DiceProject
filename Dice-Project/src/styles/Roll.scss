@@ -108,10 +108,11 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
       box-shadow: black 0px 5px 15px;
       cursor: pointer;
       white-space: nowrap;
+      border: 3px solid black;
       &:hover {
         transform: translatey(-5px);
         box-shadow: black 0px 15px 25px;
-        border: 2px solid white;
+        border: 3px solid white;
       }
     }
   }
