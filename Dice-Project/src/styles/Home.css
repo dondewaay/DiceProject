@@ -17,10 +17,10 @@
   box-shadow: black 0px 5px 15px;
   cursor: pointer;
 }
-
 .btn:hover {
   transform: translatey(-5px);
   box-shadow: black 0px 15px 25px;
+  border: 4px solid white;
 }
 
 .billboard {
@@ -57,4 +57,12 @@
 .link {
   color: var(--UNSELCOLOR) !important;
   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .canvas .threed {
+    height: 100%;
+    width: 100vw;
+    margin-left: auto;
+  }
 }/*# sourceMappingURL=Home.css.map */

@@ -21,11 +21,11 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
   transition: 0.2s ease-in-out;
   box-shadow: black 0px 5px 15px;
   cursor: pointer;
-}
-
-.btn:hover {
-  transform: translatey(-5px);
-  box-shadow: black 0px 15px 25px;
+  &:hover {
+    transform: translatey(-5px);
+    box-shadow: black 0px 15px 25px;
+    border: 4px solid white;
+  }
 }
 
 .billboard {
@@ -62,4 +62,14 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
 .link {
   color: var(--UNSELCOLOR) !important;
   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .canvas {
+    .threed {
+      height: 100%;
+      width: 100vw;
+      margin-left: auto;
+    }
+  }
 }

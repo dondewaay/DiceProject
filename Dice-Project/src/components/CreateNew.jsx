@@ -4,7 +4,6 @@ import Button from "./Button";
 export default function CreateNew() {
   return (
     <div className="createNewCard">
-      <div>
         <ul>
           <li>
             <input type="number" /> d2
@@ -30,16 +29,12 @@ export default function CreateNew() {
           <li>
             <input type="number" /> d100
           </li>
-          <li>
-            <input type="number" /> Modifier
-          </li>
-        </ul>
-        <div className="buttons">
-          <Button className="btn" message="Submit" />
-          <Button className="btn" message="Save" />
-          <Button className="btn" message="Quick Roll" />
+          <div className="buttons">
+          <Button className="btn1" message="Submit" />
+          <Button className="btn1" message="Save" />
+          <Button className="btn1" message="Quick Roll" />
         </div>
-      </div>
+        </ul>
     </div>
   );
 }
