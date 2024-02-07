@@ -1,6 +1,6 @@
 import RollHero from "../components/RollHero";
 import Grid from "../components/Grid";
-import "../styles/Roll.css";
+import "../styles/Roll.scss";
 
 export default function Roll() {
   return (
