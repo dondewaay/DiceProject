@@ -1,7 +1,6 @@
 import Button from "./Button";
 import Model from "./Model";
 import { Canvas } from "@react-three/fiber";
-import "../styles/Home.css";
 
 export default function Main() {
   return (
