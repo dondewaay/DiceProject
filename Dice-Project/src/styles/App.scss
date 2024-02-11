@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Manrope:700|Manrope:400');
 
 /* VARIABLES */
 $UNSELCOLOR: hsla(0, 0%, 100%, 0.5);
@@ -29,11 +30,13 @@ nav {
   position: fixed;
   transition: all 0.2 ease-in-out;
   text-decoration: none;
+  pointer-events: none;
   h1 {
     font-family: Helvetica;
     white-space: nowrap;
     color: $UNSELCOLOR;
     transition: 0.2s ease-in-out;
+    pointer-events: auto;
     &:hover {
       transform: scale(1.05);
       color: white;
