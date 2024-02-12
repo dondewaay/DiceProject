@@ -1,4 +1,5 @@
 import Card from "./Card";
+import NewCard from "./NewCard";
 
 export default function Grid() {
   return (
@@ -8,6 +9,8 @@ export default function Grid() {
       <Card name="Saving Throw" />
       <Card name="Initiave" />
       <Card name="Custom" />
+      <Card name="Custom" />
+      <NewCard />
     </div>
   );
 }
