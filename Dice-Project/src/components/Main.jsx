@@ -13,9 +13,10 @@ export default function Main() {
       </div>
       <div className="billboard">
         <h1>
-          Polymer? <br />I hardl-
+          A New Way <br />
+          to <span>Roll</span>
         </h1>
-        <Button message={"Roll"} />
+        <Button />
       </div>
     </div>
   );

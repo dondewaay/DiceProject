@@ -37,7 +37,9 @@ nav {
     color: $UNSELCOLOR;
     transition: 0.2s ease-in-out;
     pointer-events: auto;
+    text-decoration-thickness: 2px;
     &:hover {
+      text-decoration: underline;
       transform: scale(1.05);
       color: white;
       cursor: pointer;
@@ -61,6 +63,7 @@ nav {
   width: 100%;
   background-color: black;
   color: white;
+  border-top: 2px solid white;
   .pop {
     transition: 0.1s ease-in-out;
     &:hover {

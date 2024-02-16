@@ -1,7 +1,6 @@
 // Variables:
 $BG: #191919;
 $UNSELCOLOR: hsla(0, 0%, 100%, 0.5);
-$BGI: linear-gradient(45deg, #e66465, #f30769);
 
 * {
   padding: 0;
@@ -10,22 +9,21 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
 }
 
 .btn {
-  border: white 1px;
+  border: 2px solid white;
   font-size: 1.8rem;
   margin-top: 1.5rem;
   color: white;
   height: 75px;
   width: 110px;
-  border-radius: 10px;
+  border-radius: 1px;
   background: black;
   transition: 0.2s ease-in-out;
   box-shadow: black 0px 5px 15px;
   cursor: pointer;
-  border: 3px solid black;
   &:hover {
     transform: translatey(-5px);
     box-shadow: black 0px 15px 25px;
-    border: 3px solid white;
+    border: 5px solid white;
   }
 }
 
@@ -38,20 +36,23 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
   -ms-user-select: none;
   user-select: none;
   cursor: default;
+  h1 {
+    font-size: 8rem;
+    span {
+      font-family: "NeueBold";
+      background: linear-gradient(45deg, orange, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
-
-.billboard h1 {
-  font-size: 8rem;
-}
-
 .canvas {
-  font-family: Helvetica;
+  font-family: "Neue";
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 0;
-  background-image: $BGI;
   color: white;
   .threed {
     height: 100%;
@@ -73,4 +74,14 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
       margin-left: auto;
     }
   }
+}
+
+@font-face {
+  font-family: Neue;
+  src: url(src/assets/fonts/Neue/PPNeueMachina-InktrapRegular.otf);
+}
+
+@font-face {
+  font-family: NeueBold;
+  src: url(src/assets/fonts/Neue/PPNeueMachina-InktrapRegularItalic.otf);
 }
