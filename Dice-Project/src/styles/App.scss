@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Manrope:700|Manrope:400');
+@import url("https://fonts.googleapis.com/css?family=Manrope:700|Manrope:400");
 
 /* VARIABLES */
 $UNSELCOLOR: hsla(0, 0%, 100%, 0.5);
@@ -19,20 +19,20 @@ $UNSELCOLOR: hsla(0, 0%, 100%, 0.5);
 /* GENERAL STYLES */
 
 nav {
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: row;
   z-index: 1;
   width: 100%;
   height: 25px;
-  padding: 4rem 5rem 4rem 5rem;
+  padding: 3rem 4rem 3rem 4rem;
   align-items: center;
   position: fixed;
   transition: all 0.2 ease-in-out;
   text-decoration: none;
   pointer-events: none;
   h1 {
-    font-family: Helvetica;
+    font-family: "Neue";
     white-space: nowrap;
     color: $UNSELCOLOR;
     transition: 0.2s ease-in-out;
@@ -51,7 +51,7 @@ nav {
 }
 
 .foot {
-  font-family: "Pexel";
+  font-family: "Neue";
   font-size: 1.2rem;
   padding: 0rem 5rem 2rem 5rem;
   justify-content: space-between;
@@ -87,4 +87,9 @@ nav {
 @font-face {
   font-family: Pexel;
   src: url(../assets/fonts/PexelGrotesk/PexelGrotesk-Regular.otf);
+}
+
+@font-face {
+  font-family: Neue;
+  src: url(src/assets/fonts/Neue/PPNeueMachina-InktrapRegular.otf);
 }

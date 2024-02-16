@@ -1,5 +1,5 @@
 // Variables:
-$BG: #191919;
+$BG: black;
 $UNSELCOLOR: hsla(0, 0%, 100%, 0.5);
 $BGI: linear-gradient(45deg, #e66465, #f30769);
 
@@ -29,8 +29,8 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
   height: 80vh;
   display: flex;
   color: white;
-  font-family: Helvetica;
-  background-image: $BGI;
+  font-family: "Neue";
+  background-color: $BG;
   box-shadow: black 0px 0px 40px;
   h1 {
     position: relative;
@@ -104,4 +104,8 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
       }
     }
   }
+}
+@font-face {
+  font-family: Neue;
+  src: url(src/assets/fonts/Neue/PPNeueMachina-InktrapRegular.otf);
 }

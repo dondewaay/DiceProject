@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <nav>
       <Link className="link" to="/" style={linkStyle}>
-        <h1 className="menu">🎲 PolyRoll Beta</h1>
+        <h1 className="menu">PolyRoll Beta</h1>
       </Link>
     </nav>
   );
