@@ -1,5 +1,6 @@
 import Card from "./Card";
 import NewCard from "./NewCard";
+import { useState } from "react";
 
 export default function Grid() {
   let cards = [
@@ -23,6 +24,18 @@ export default function Grid() {
       this.d20 = d20;
       this.d100 = d100;
     }
+  }
+
+  function roll(DiceSet) {
+    let total = 0;
+    for (let i = 0; i < DiceSet.d2; i++) {
+      total += randInt(2);
+    }
+    return total;
+  }
+
+  function randInt(max) {
+    return Math.floor(Math.random() * max);
   }
 
   const listItems = cards.map((name) => <Card name={name}></Card>);
