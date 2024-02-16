@@ -2,7 +2,8 @@ import Card from "./Card";
 import NewCard from "./NewCard";
 
 export default function Grid() {
-  let cards = [];
+  const cards = [];
+  const usedNames = [];
 
   class DiceSet {
     constructor(name, d2, d4, d6, d8, d10, d12, d20, d100) {
@@ -48,6 +49,15 @@ export default function Grid() {
 
   function randInt(max) {
     return Math.floor(Math.random() * max) + 1;
+  }
+
+  function addCard(name, d2, d4, d6, d8, d10, d12, d20, d100) {
+    if (name in usedNames) {
+      throw console.error("Already used name");
+    } else {
+      cards += new DiceSet(name, d2, d4, d6, d8, d10, d12, d20, d100);
+      usedNames += name;
+    }
   }
 
   const listItems = cards.map((name) => <Card name={name}></Card>);
