@@ -52,9 +52,10 @@ $BGI: linear-gradient(45deg, #e66465, #f30769);
   .grid {
     margin: 3rem 10rem 0rem 10rem;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     padding-bottom: 5rem;
     max-width: 100vw;
+    min-width: 0;
     .card {
       cursor: pointer;
       padding: 2rem;
