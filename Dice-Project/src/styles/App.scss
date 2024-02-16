@@ -37,9 +37,8 @@ nav {
     color: $UNSELCOLOR;
     transition: 0.2s ease-in-out;
     pointer-events: auto;
-    text-decoration-thickness: 2px;
+    text-decoration: underline;
     &:hover {
-      text-decoration: underline;
       transform: scale(1.05);
       color: white;
       cursor: pointer;
