@@ -40,7 +40,7 @@ $UNSELCOLOR: hsla(0, 0%, 100%, 0.5);
     font-size: 8rem;
     span {
       font-family: "NeueBold";
-      background: linear-gradient(45deg, orange, red);
+      background: linear-gradient(45deg, rgb(255, 170, 0), red);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }

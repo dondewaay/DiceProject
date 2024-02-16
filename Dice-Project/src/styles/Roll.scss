@@ -29,7 +29,6 @@ $UNSELCOLOR: hsla(0, 0%, 100%, 0.5);
   color: white;
   font-family: "Neue";
   background-color: black;
-  box-shadow: black 0px 0px 40px;
   border-bottom: 2px solid white;
   h1 {
     position: relative;
@@ -42,7 +41,12 @@ $UNSELCOLOR: hsla(0, 0%, 100%, 0.5);
     user-select: none;
     font-size: 6rem;
     height: 50vh;
-    text-shadow: 0px 15px 40px black;
+    span {
+      font-family: "NeueBold";
+      background: linear-gradient(45deg, rgb(255, 170, 0), red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }
 .grid-container {

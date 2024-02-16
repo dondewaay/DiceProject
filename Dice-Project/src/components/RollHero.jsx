@@ -4,7 +4,7 @@ export default function RollMain() {
       <h1>
         Create a Set
         <br />
-        or
+        <span>or</span>
         <br />
         Select a Preset:
       </h1>
