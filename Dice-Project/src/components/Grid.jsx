@@ -2,8 +2,8 @@ import Card from "./Card";
 import NewCard from "./NewCard";
 
 export default function Grid() {
-  const cards = [];
-  const usedNames = [];
+  let cards = [];
+  let usedNames = [];
 
   class DiceSet {
     constructor(name, d2, d4, d6, d8, d10, d12, d20, d100) {
