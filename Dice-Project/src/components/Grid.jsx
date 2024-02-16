@@ -1,16 +1,8 @@
 import Card from "./Card";
 import NewCard from "./NewCard";
-import { useState } from "react";
 
 export default function Grid() {
-  let cards = [
-    "Potion",
-    "Claymore",
-    "Saving Throw",
-    "Initiave",
-    "Custom",
-    "Custom",
-  ];
+  let cards = [];
 
   class DiceSet {
     constructor(name, d2, d4, d6, d8, d10, d12, d20, d100) {
@@ -24,18 +16,38 @@ export default function Grid() {
       this.d20 = d20;
       this.d100 = d100;
     }
-  }
-
-  function roll(DiceSet) {
-    let total = 0;
-    for (let i = 0; i < DiceSet.d2; i++) {
-      total += randInt(2);
+    roll() {
+      let total = 0;
+      for (let i = 0; i < this.d2; i++) {
+        total += randInt(2);
+      }
+      for (let i = 0; i < this.d4; i++) {
+        total += randInt(4);
+      }
+      for (let i = 0; i < this.d6; i++) {
+        total += randInt(6);
+      }
+      for (let i = 0; i < this.d8; i++) {
+        total += randInt(8);
+      }
+      for (let i = 0; i < this.d10; i++) {
+        total += randInt(10);
+      }
+      for (let i = 0; i < this.d12; i++) {
+        total += randInt(12);
+      }
+      for (let i = 0; i < this.d20; i++) {
+        total += randInt(20);
+      }
+      for (let i = 0; i < this.d100; i++) {
+        total += randInt(100);
+      }
+      return total;
     }
-    return total;
   }
 
   function randInt(max) {
-    return Math.floor(Math.random() * max);
+    return Math.floor(Math.random() * max) + 1;
   }
 
   const listItems = cards.map((name) => <Card name={name}></Card>);
@@ -43,7 +55,7 @@ export default function Grid() {
     <div className="grid-container">
       <div className="grid">
         {listItems}
-        <NewCard />
+        <NewCard onClick={addCard()} />
       </div>
     </div>
   );
