@@ -55,7 +55,7 @@ export default function Grid() {
     <div className="grid-container">
       <div className="grid">
         {listItems}
-        <NewCard onClick={addCard()} />
+        <NewCard onClick={""} />
       </div>
     </div>
   );
