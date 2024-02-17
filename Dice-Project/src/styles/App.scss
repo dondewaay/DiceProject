@@ -19,36 +19,44 @@ $UNSELCOLOR: hsla(0, 0%, 100%, 0.5);
 /* GENERAL STYLES */
 
 nav {
-  font-size: 1rem;
+  position: fixed;
   display: flex;
-  flex-direction: row;
-  z-index: 1;
+  justify-content: space-between;
+  z-index: 999;
   width: 100%;
   height: 25px;
   padding: 3rem 4rem 3rem 4rem;
-  align-items: center;
-  position: fixed;
-  transition: all 0.2 ease-in-out;
-  text-decoration: none;
+  transition: all 0.2s ease-in-out;
   pointer-events: none;
+  align-items: flex-end;
+  font-size: 1rem;
   h1 {
     font-family: "Neue";
     white-space: nowrap;
     color: $UNSELCOLOR;
     transition: 0.2s ease-in-out;
     pointer-events: auto;
-    text-decoration: underline;
+    margin-right: auto;
+  }
+  .link {
+    color: $UNSELCOLOR;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
     &:hover {
+      text-decoration: underline;
       transform: scale(1.05);
-      color: white;
-      cursor: pointer;
     }
   }
-}
-
-.link {
-  color: $UNSELCOLOR;
-  text-decoration: none;
+  img {
+    max-width: 25px;
+    height: auto;
+    margin-left: auto;
+    pointer-events: auto;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .foot {
@@ -82,6 +90,10 @@ nav {
     padding-top: 3rem;
     h1 {
       color: white;
+    }
+    img {
+      width: 20px;
+      height: 20px;
     }
   }
 }

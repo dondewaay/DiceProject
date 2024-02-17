@@ -54,6 +54,8 @@ export default function Grid() {
   function addCard(name, d2, d4, d6, d8, d10, d12, d20, d100) {
     if (name in usedNames) {
       throw console.error("Already used name");
+    } else if (name === "") {
+      throw console.error("Name cannot be empty");
     } else {
       cards += new DiceSet(name, d2, d4, d6, d8, d10, d12, d20, d100);
       usedNames += name;
