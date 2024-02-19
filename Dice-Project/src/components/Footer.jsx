@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="foot">
       <p>
-        <a href="">🦋 Don DeWaay III</a>
+        <a href="">🦋 Don DeWaay III 2024</a>
       </p>
       <div>
         <p>Socials:</p>
