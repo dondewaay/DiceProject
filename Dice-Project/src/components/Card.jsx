@@ -1,17 +1,17 @@
-export default function Card({ name, config }) {
+import { motion } from "framer-motion";
+
+const Card = ({ name, config }) => {
   return (
-    <div className="card">
-      <h3>{name}</h3>
-      <p>d2: {config.d2}</p>
-      <p>d3: {config.d3}</p>
-      <p>d4: {config.d4}</p>
-      <p>d6: {config.d6}</p>
-      <p>d8: {config.d8}</p>
-      <p>d10: {config.d10}</p>
-      <p>d12: {config.d12}</p>
-      <p>d20: {config.d20}</p>
-      <p>d100: {config.d100}</p>
-      <button />
-    </div>
+    <motion.div
+      className="card"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <h2>{name}</h2>
+      <button className="btn">Roll</button>
+    </motion.div>
   );
-}
+};
+
+export default Card;

@@ -135,15 +135,10 @@ const DiceRoller = () => {
         <button onClick={addPreset}>Add</button>
       </div>
       <div>
-        <h2>Presets</h2>
-        <div className="grid-container">
-          <div className="grid">
-            <div className="preset-container">
-              {presets.map((preset, index) => (
-                <Card key={index} name={preset.name} config={preset.config} />
-              ))}
-            </div>
-          </div>
+        <div className="preset-container">
+          {presets.map((preset, index) => (
+            <Card key={index} name={preset.name} config={preset.config} />
+          ))}
         </div>
       </div>
     </div>
