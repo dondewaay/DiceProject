@@ -12,8 +12,8 @@ export default function Header() {
       <Link className="link" to="/" style={linkStyle}>
         <motion.h1
           className="menu"
-          initial={{ y: -70 }}
-          animate={{ y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
           PolyRoll Beta
@@ -22,9 +22,9 @@ export default function Header() {
       <a href="https://github.com/dondewaay/DiceProject">
         <motion.img
           src="src/assets/img/github-mark-white.png"
-          initial={{ opacity: 0, y: -70 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
         />
       </a>
     </nav>
